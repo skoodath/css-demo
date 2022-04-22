@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="page_title">CSS Demo</h1>
+    </header>
+    <main class="main">
+      <article>
+        <h2 class="article_title">Box Sizing</h2>
+        <p class="description">
+          <span
+            ><code>Box sizing: content-box</code> excludes padding and border
+            from total width and height</span
+          >
+          <br />
+          <span
+            ><code>Box sizing: border-box</code> includes padding and border in
+            total width and height</span
+          >
+        </p>
+        <div class="box_sizing d-flex box-size" onclick="boxSizing(this)">
+          <p class="css_description_before css_feature d-flex">
+            box-sizing: border-box
+          </p>
+          <p class="css_description_after css_feature d-flex">
+            box-sizing: content-box
+          </p>
+        </div>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
